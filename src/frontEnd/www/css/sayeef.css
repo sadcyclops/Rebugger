@@ -1,0 +1,13 @@
+table {
+    width:100%;
+    border: 1px solid lightgray;
+}
+
+.registerValues {
+    text-align: right;
+}
+
+.scrollTable {
+    overflow: scroll;
+    height: 200pt;
+}

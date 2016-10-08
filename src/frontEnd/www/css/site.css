@@ -28,7 +28,3 @@ textarea:focus, input:focus{
     font-size: medium;
     color: white;
 }
-
-.table {
-    border-collapse: collapse;
-}

@@ -1,3 +1,16 @@
-<div ng-controller='memoryController'>
-    Memory Controller
+<div ng-controller='registerController'>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="panelTitle">Memory</div>
+        </div>
+    </div>
+
+<div class = "scrollTable">
+    <table>
+        <tr ng-repeat="register in registers">
+            <td><b>Register {{$index}}</b></td>
+            <td>{{register}}</td>
+        </tr>
+    </table>
+    </div>
 </div>
