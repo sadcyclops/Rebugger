@@ -1,16 +1,29 @@
 <div ng-controller='registerController'>
     <div class="panel panel-default">
         <div class="panel-heading">
+	        
+        
             <div class="panelTitle">Memory</div>
         </div>
-    </div>
-
-<div class = "scrollTable">
-    <table>
-        <tr ng-repeat="register in registers">
-            <td><b>Register {{$index}}</b></td>
-            <td>{{register}}</td>
-        </tr>
-    </table>
-    </div>
+    
+	    <div class="panel-body">	 
+	    	<div class = "scrollTable">			
+    			<table>
+    			<tr style="border-bottom: 1px solid gray">
+    				<th>
+    					Address
+    				</th>
+    				<th>
+    					Value
+    				</th>
+    			</tr>
+			        <tr ng-repeat="register in registers">
+			            <td>{{4*$index + 64000}}</td>
+			            <td>{{register}}</td>
+			        </tr>
+    			</table>
+    		</div>
+	  	</div>
+	</div>
 </div>
+	

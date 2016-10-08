@@ -19,24 +19,14 @@
 </head>
 <body ng-app="rebuggerApp">
     <div class="navbar navbar-default">
-        <a class="navbar-brand" href="#">Rebugger</a>
-        <ul class="nav nav-pills">
-		  <li role="presentation" class="dropdown">
-		    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-		      Settings <span class="caret"></span>
-		    </a>
-		    <ul class="dropdown-menu">
-		    <li><a href="#">Decimal</a></li>
-            <li><a href="#">Floating Point</a></li>
-            <li><a href="#">Hex</a></li>
-            <li><a href="#">Binary</a></li>
-		    </ul>
-		  </li>
-		</ul>
+        <a class="navbar-brand" href="#">Rebugger</a>        
     </div>
 
     <div class="container">
         <div ng-controller='memoryController' class="row">
+        	<div class="col-md-2 col-xs-6" ng-include="'partials/CPUInfo.html'">
+            	
+            </div>
             <!-- Hold the text editor -->
             <div class="col-md-4 col-xs-9" ng-include="'partials/TextEditor.html'">
 
@@ -48,10 +38,7 @@
 
             <div class="col-md-3 col-xs-6" ng-include="'partials/Memory.html'">
 
-            </div>
-            <div class="col-md-2 col-xs-6" ng-include="'partials/CPUInfo.html'">
-            	
-            </div>
+            </div>            
         </div>
     </div>
 
