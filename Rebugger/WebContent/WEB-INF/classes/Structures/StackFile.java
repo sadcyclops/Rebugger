@@ -55,6 +55,9 @@ public class StackFile {
 		//Align
 		this.stackPointer -= this.stackPointer % 4;
 		this.stackPointer -= 4;
-		this.stack.add(value);
+		this.stack.add(value); }
+	
+	public byte popByte() {
+		this.stackPointer++;
 	}
 }
