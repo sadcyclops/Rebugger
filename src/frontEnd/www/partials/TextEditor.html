@@ -18,10 +18,11 @@
         </div>
         <div class="panel-body">
             <div ng-repeat="line in lines">
-                <div style="display:inline-block" class="breakpoint" ng-class="breakpoints.indexOf($index) > -1 ? active : not-active">
+                <div style="display:inline-block" class="breakpoint" ng-click="toggleBreakpoint($index)" ng-class="breakpoints.indexOf($index) > -1 ? active : not-active">
                     <span ng-if="breakpoints.indexOf($index) > -1" class="glyphicon glyphicon-record"></span>
+                    <span ng-if="breakpoints.indexOf($index) <= -1" style="margin-right:16px;"></span>
                 </div>
-                
+
                 <input type="text" style="width:95%" ng-model="lines[$index]" />        
             </div>            
         </div>
