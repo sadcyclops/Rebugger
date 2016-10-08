@@ -1,0 +1,37 @@
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #333333;
+  border-color: #ddd;
+}
+input {
+    border: none;
+    background: transparent;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.breakpoint {
+    cursor:pointer;
+}
+
+.breakpoint.not-active:hover  {
+    background: #3f3f3f;
+}
+
+<<<<<<< HEAD
+.active-line {
+    border: 1px solid blue;
+=======
+}
+
+.panelTitle {
+    font-size: medium;
+    color: white;
+}
+
+.table {
+    border-collapse: collapse;
+>>>>>>> 0afd71bc6f88bb36a868cbf8d3a86bd625c9f9a7
+}
