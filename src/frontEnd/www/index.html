@@ -13,7 +13,11 @@
 </head>
 <body ng-app="rebuggerApp">
 
-
+<div ng-controller='memoryController'>
+    <div ng-repeat="mem in contents">
+        <div>Address: {{$index}} | {{convertBase(mem)}}</div>
+    </div>
+</div>
 
 
 </body>
