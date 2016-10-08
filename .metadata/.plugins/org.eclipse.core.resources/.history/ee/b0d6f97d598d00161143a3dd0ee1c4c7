@@ -1,0 +1,4 @@
+rebuggerApp.controller('MainController', ['$scope', 'MachineFactory', function($scope, MachineFactory)
+{
+	$
+}]);

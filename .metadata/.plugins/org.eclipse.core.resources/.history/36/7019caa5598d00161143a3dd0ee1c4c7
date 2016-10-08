@@ -1,0 +1,8 @@
+rebuggerApp.controller('MainController', ['$scope', 'MachineFactory', function($scope, MachineFactory)
+{
+	$scope.templates =
+	    [{ name: 'Stack.html', url: 'partials/Stack.html'},
+	     { name: 'Heap.html', url: 'partials/Heap.html'}];
+	
+	$scope.selectedTemplate
+}]);

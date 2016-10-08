@@ -1,0 +1,29 @@
+<div ng-controller='registerController'>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+	        
+        
+            <div class="panelTitle">Memory</div>
+        </div>
+    
+	    <div class="panel-body">	    
+	    	<div class = "scrollTable">			
+    			<table>
+    			<tr>
+    				<td>
+    					Address
+    				</td>
+    				<td>
+    					Value
+    				</td>
+    			</tr>
+			        <tr ng-repeat="register in registers">
+			            <td><b>Register {{$index}}</b></td>
+			            <td>{{register}}</td>
+			        </tr>
+    			</table>
+    		</div>
+	  	</div>
+	</div>
+</div>
+	
