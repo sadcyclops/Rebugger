@@ -58,6 +58,29 @@ public class StackFile {
 		this.stack.add(value); }
 	
 	public byte popByte() {
+		byte value;
 		this.stackPointer++;
-	}
+		if (this.stackPointer % 4 == 0) {
+			value = (byte) this.stack.remove(this.stack.size());
+		} else {
+			int end = this.stack.get(this.stack.size());
+			end >>= ((this.stackPointer - 1) << 3);
+			value = (byte) end;}}
+	
+	public short popShort() throws StackException{
+		if (this.stackPointer % 2 != 0) {
+			throw new StackException(); }
+		short value;
+		this.stackPointer += 2;
+		if (this.stackPointer % 4 == 0) {
+			value = (short) this.stack.remove(this.stack.size());
+		} else {
+			int end = this.stack.get(this.stack.size());
+			end >>= (16);
+			value = (short) end;}}
+	
+	public short popInt() {
+		if (this.stackPointer % 4 != 0) {
+			throw new StackException(); }
+		return this.stack.remove(this.stack.size()); }
 }
