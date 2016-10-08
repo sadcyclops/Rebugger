@@ -17,7 +17,7 @@
         </div>
         <div class="panel-body">
             <div ng-repeat="line in lines">
-                <div style="display:inline-block" class="breakpoint" ng-click="toggleBreakpoint($index)"><span>
+                <div style="display:inline-block" class="breakpoint" ng-click="toggleBreakpoint($index)" ng-class="breakpoints.indexOf($index) > -1 ? 'active' : 'not-active'"><span>
                     <span ng-if="breakpoints.indexOf($index) > -1" class="glyphicon glyphicon-record"></span>
                     <span ng-if="breakpoints.indexOf($index) <= -1" style="margin-right:16px;"></span>
                 </div>
