@@ -1,6 +1,0 @@
-rebuggerApp.controller('MainController', ['$scope', 'MachineFactory', function($scope, MachineFactory)
-{
-	$scope.templates =
-	    [{ name: 'template1.html', url: 'partials/Stack.html'},
-	     { name: 'template2.html', url: 'partials/Heap.html'}];
-}]);
