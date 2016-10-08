@@ -3,3 +3,7 @@
   background-color: #333333;
   border-color: #ddd;
 }
+input {
+    border: none;
+    background: transparent;
+}

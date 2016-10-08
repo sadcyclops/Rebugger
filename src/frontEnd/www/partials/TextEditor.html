@@ -2,22 +2,25 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <div class="btn btn-default">
-                <span class="glyphicon glyphicon-play button" style="font-size:16px;"></span>
+                <span class="glyphicon glyphicon-play button"></span>
             </div>
             <div class="btn btn-default">
-                <span class="glyphicon glyphicon-stop button" style="font-size:16px;"></span>
+                <span class="glyphicon glyphicon-stop button"></span>
             </div>
             <div class="btn btn-default">
-                <span class="glyphicon glyphicon-share-alt button" style="font-size:16px;"></span>
+                <span class="glyphicon glyphicon-share-alt button"></span>
             </div>
             <div class="btn btn-default">
-                <span class="glyphicon glyphicon-arrow-down " style="font-size:16px;"></span>
+                <span class="glyphicon glyphicon-arrow-down "></span>
             </div>
             
             
         </div>
         <div class="panel-body">
-            <input type="text" />
+            <div ng-repeat="line in lines">
+                <span ng-if="breakpoints.indexOf($index) > 0" class="glyphicon glyphicon-certificate">
+                <input type="text" style="width:100%" ng-model="lines[$index]" />
+            </div>            
         </div>
 
 </div>
