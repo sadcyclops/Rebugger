@@ -4,7 +4,7 @@
 <title>Rebugger</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-
+<link rel="stylesheet" href="css/site.css">
 
 <script src="js/RebuggerApp.js"></script>
 <script src="js/MachineFactory.js"></script>
@@ -14,22 +14,26 @@
 
 </head>
 <body ng-app="rebuggerApp">
-
-<div ng-controller='memoryController' class="row">
-    <!-- Hold the text editor -->
-    <div class="col-md-9 col-xs-12" ng-include="'partials/TextEditor.html'">
-
+    <div class="navbar navbar-default">
+        <a class="navbar-brand" href="#">Rebugger</a>
     </div>
 
-    <div class="col-md-3 col-xs-6" ng-include="'partials/Memory.html'">
+    <div class="container">
+        <div ng-controller='memoryController' class="row">
+            <!-- Hold the text editor -->
+            <div class="col-md-9 col-xs-12" ng-include="'partials/TextEditor.html'">
 
+            </div>
+
+            <!--<div class="col-md-3 col-xs-6" ng-include="'partials/Memory.html'">
+
+            </div>
+            
+            <div class="col-md-3 col-xs-6" ng-include="'partials/Register.html'">
+
+            </div>-->
+        </div>
     </div>
-    
-    <div class="col-md-3 col-xs-6" ng-include="'partials/Register.html'">
-
-    </div>
-</div>
-
 
 </body>
 </html>

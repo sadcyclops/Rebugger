@@ -3,5 +3,6 @@ rebuggerApp.controller('textEditorController', ['$scope', 'MachineFactory', func
 
     $scope.lines = MachineFactory.machine.lines;
     $scope.breakpoints = MachineFactory.breakpoints;
+    $scope.currentLine = MachineFactory.currentLine;
 
 }]);

@@ -22,7 +22,8 @@ rebuggerApp.factory('MachineFactory', ['$http', function ($http)    {
         ],
         "breakpoints" : [
             0,2,4
-        ]
+        ],
+        "currentLine" : 0
     };
 
     //stop the machine execution
