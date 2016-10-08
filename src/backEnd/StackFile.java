@@ -1,38 +1,30 @@
 package backEnd;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class StackFile {
 	
-	private HashMap<Integer, Integer> stack;
+	private ArrayList<Integer> stack;
 	private int stackPointer;
 	
 	public StackFile() {
-		this.stack = new HashMap<Integer, Integer>();}
+		this.stack = new ArrayList<Integer>();
+		this.stackPointer = 64000; }
 	
-	public void pushByte(int element) {
-		stackPointer++;
-		this.stack.put(stackPointer, element);}
+	public void changeStackPointer(int difference) {
+		if (difference < 0) {
+			int someThing = (-1 * stackPointer) % 4;
+			difference -= someThing;
+			stackPointer -= difference;
+			while (difference >= 0) {
+				this.stack.add(0);
+				difference -= 4;}
+		} else {
+			while (difference >= 4) {
+				stackPointer += 4;
+				this.stack.remove(this.stack.size());
+			}
+			stackPointer -= difference; }}
 	
-	public int popByte() {
-		int value = this.stack.remove(stackPointer);
-		this.stackPointer--;
-		return value;}
 	
-	public void pushWord(int element) {
-		stackPointer += 2;
-		this.stack.put(stackPointer, element);}
-	
-	public int popWord() {
-		int value = this.stack.remove(stackPointer);
-		this.stackPointer -= 2;
-		return value;}
-
-	public void pushElement(int element) {
-		stackPointer += 4;
-		this.stack.put(stackPointer, element);}
-	
-	public int popElement() {
-		int value = this.stack.remove(stackPointer);
-		this.stackPointer -= 4;
-		return value;}}
+}
