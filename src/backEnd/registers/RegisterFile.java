@@ -1,4 +1,4 @@
-package backEnd;
+package backEnd.registers;
 
 public class RegisterFile {
 	final static int BYTE = 255;
