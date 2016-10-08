@@ -14,4 +14,18 @@ public class RegisterFile {
 		 return (short) (this.data[register] >> (position << 4)); }
 	 
 	 public int getInt(int register) {
-		 return this.data[register]; }}
+		 return this.data[register]; }
+	 
+	 public void setByte(int register, int value){
+		 this.data[register] = value;
+	 }
+	 
+	 public void setWord(int register, short value){
+		 this.data[register] = value;
+		 
+	 }
+	 
+	 public void setByte(int register, byte value){
+		 this.data[register] = value;
+	 }
+}
