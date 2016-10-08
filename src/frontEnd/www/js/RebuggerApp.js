@@ -1,0 +1,1 @@
+var rebuggerApp = angular.module("rebuggerApp", []);
