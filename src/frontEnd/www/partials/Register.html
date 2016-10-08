@@ -1,3 +1,14 @@
 <div ng-controller='registerController'>
-    Register Controller
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="panelTitle">Register Controller</div>
+        </div>
+    </div>
+
+    <table>
+        <tr ng-repeat="register in registers">
+            <td><b>Register {{$index}}</b></td>
+            <td>{{register}}</td>
+        </tr>
+    </table>
 </div>

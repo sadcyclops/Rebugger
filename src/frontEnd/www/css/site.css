@@ -20,6 +20,18 @@ textarea:focus, input:focus{
     background: #3f3f3f;
 }
 
+<<<<<<< HEAD
 .active-line {
     border: 1px solid blue;
+=======
+}
+
+.panelTitle {
+    font-size: medium;
+    color: white;
+}
+
+.table {
+    border-collapse: collapse;
+>>>>>>> 0afd71bc6f88bb36a868cbf8d3a86bd625c9f9a7
 }
