@@ -16,13 +16,10 @@ textarea:focus, input:focus{
     cursor:pointer;
 }
 
-.breakpoint.active {
-
+.breakpoint.not-active:hover  {
+    background: #3f3f3f;
 }
 
-.break.not-active {
-
-}
-.breakpoint:hover  {
-
+.active-line {
+    border: 1px solid blue;
 }
