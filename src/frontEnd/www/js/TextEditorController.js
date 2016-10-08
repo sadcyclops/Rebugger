@@ -11,4 +11,20 @@ rebuggerApp.controller('textEditorController', ['$scope', 'MachineFactory', func
         $scope.breakpoints.indexOf(lineNum) > -1 ? $scope.breakpoints.splice($scope.breakpoints.indexOf(lineNum), 1) : $scope.breakpoints.push(lineNum);
     }
 
+    $scope.stop = function()    {
+        MachineFactory.machine.stop();
+    }
+
+    $scope.play = function()    {
+        MachineFactory.machine.play();
+    }
+
+    $scope.stepOver = function()    {
+        MachineFactory.machine.stepOver();
+    }
+
+    $scope.stepInto = function()    {
+        MachineFactory.machine.stepInto();
+    }
+
 }]);
