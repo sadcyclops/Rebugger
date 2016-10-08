@@ -17,8 +17,7 @@ public class IntALU implements IALU{
 
 	@Override
 	public void addiu(RegisterFile file, int rt, int rs, int immediate) {
-		// TODO Auto-generated method stub
-		
+		file.setInt(rt, (int) Integer.toUnsignedLong(file.getInt(rs)));
 	}
 
 	@Override
