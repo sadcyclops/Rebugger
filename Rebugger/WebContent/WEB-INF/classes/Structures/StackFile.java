@@ -1,4 +1,4 @@
-package backEnd;
+package Structures;
 
 import java.util.ArrayList;
 

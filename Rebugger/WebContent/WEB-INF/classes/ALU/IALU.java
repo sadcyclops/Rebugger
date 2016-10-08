@@ -1,3 +1,4 @@
+package ALU;
 
 public interface IALU {
 	/*Arithmertic*/
