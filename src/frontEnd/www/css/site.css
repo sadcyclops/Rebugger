@@ -26,3 +26,12 @@ textarea:focus, input:focus{
 .breakpoint:hover  {
 
 }
+
+.panelTitle {
+    font-size: medium;
+    color: white;
+}
+
+.table {
+    border-collapse: collapse;
+}
