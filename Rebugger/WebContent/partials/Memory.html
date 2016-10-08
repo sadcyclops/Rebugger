@@ -1,16 +1,31 @@
 <div ng-controller='registerController'>
     <div class="panel panel-default">
         <div class="panel-heading">
+        <button class="btn btn-default pull-right dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	    Settings
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	    <li><a href="#">Decimal</a></li>
+			<li><a href="#">Floating Point</a></li>
+			<li><a href="#">Hex</a></li>
+			<li><a href="#">Binary</a></li>
+	  </ul>
+        
             <div class="panelTitle">Memory</div>
         </div>
-    </div>
-
-<div class = "scrollTable">
-    <table>
-        <tr ng-repeat="register in registers">
-            <td><b>Register {{$index}}</b></td>
-            <td>{{register}}</td>
-        </tr>
-    </table>
-    </div>
+    
+	    <div class="panel-body">
+	    
+	    	<div class = "scrollTable">			
+    			<table>
+			        <tr ng-repeat="register in registers">
+			            <td><b>Register {{$index}}</b></td>
+			            <td>{{register}}</td>
+			        </tr>
+    			</table>
+    		</div>
+	  	</div>
+	</div>
 </div>
+	
